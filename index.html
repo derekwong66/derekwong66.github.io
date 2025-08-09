@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zihang Huang — Ph.D. Candidate & Perception/AD Research</title>
+  <meta name="description" content="Zihang Huang — Ph.D. candidate and Perception Fusion Discipline Manager at Desay SV Automotive. Research: autonomous driving, computer vision, depth, sensor fusion." />
+  <meta property="og:title" content="Zihang Huang — Ph.D. Candidate & Perception/AD Research" />
+  <meta property="og:description" content="Autonomous driving • Computer vision • Depth estimation • Sensor fusion" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/0?v=4" />
+  <meta name="theme-color" content="#00D1FF" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root{
+      --bg:#f7fbff; /* bright base */
+      --card:#ffffff;
+      --ink:#0e1726;
+      --muted:#415a77;
+      --accent:#00d1ff; /* cyber-cyan */
+      --accent-2:#7c4dff; /* violet */
+      --ring:rgba(0,209,255,0.25);
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%}
+    body{
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(1200px 800px at 90% -10%, rgba(0,209,255,.12), transparent 60%),
+        radial-gradient(800px 600px at -10% 20%, rgba(124,77,255,.10), transparent 55%),
+        var(--bg);
+      line-height:1.6;
+      letter-spacing:.2px;
+    }
+    a{color:var(--ink); text-decoration: none;}
+    a.link{color:var(--accent);}
+    a.link:hover{opacity:.9; text-decoration:underline}
+    .wrap{max-width:1120px;margin:0 auto;padding:32px 20px 60px}
+    header{
+      position:sticky;top:0;z-index:5;background:rgba(247,251,255,.7);backdrop-filter:saturate(180%) blur(8px);
+      border-bottom:1px solid rgba(0,0,0,.06)
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:14px;max-width:1120px;margin:0 auto;padding:12px 20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.4px}
+    .brand .dot{width:14px;height:14px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2)); box-shadow:0 0 20px rgba(0,209,255,.7)}
+    .nav a{padding:8px 12px;border-radius:999px}
+    .nav a:hover{background:rgba(0,209,255,.12)}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:36px 0 10px}
+    .card{background:var(--card);border:1px solid rgba(14,23,38,.06);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero .card{padding:26px}
+    h1{margin:0 0 8px;font-size: clamp(28px, 3.4vw, 44px);line-height:1.1;letter-spacing:.2px}
+    .subtitle{font-size:clamp(14px,1.4vw,18px);color:var(--muted);margin-bottom:14px}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 8px}
+    .badge{font-family:"JetBrains Mono", monospace;font-weight:600;font-size:12px;padding:8px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.08);background:linear-gradient(180deg,#fff, #f6fbff);box-shadow:inset 0 0 0 2px var(--ring)}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;font-weight:600;border:1px solid rgba(0,0,0,.1);background:#fff;box-shadow:var(--shadow)}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;border:none}
+    .btn:hover{transform:translateY(-1px)}
+    .pfp{aspect-ratio:1/1;border-radius:20px;background:
+      radial-gradient(80% 120% at 80% 10%, rgba(0,209,255,.18), transparent 40%),
+      radial-gradient(80% 120% at 20% 80%, rgba(124,77,255,.14), transparent 40%),
+      #ffffff; border:1px dashed rgba(0,0,0,.1); display:flex;align-items:center;justify-content:center;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+    .col-12{grid-column:span 12}
+    .col-6{grid-column:span 6}
+    .section{margin-top:26px}
+    .section h2{font-size:clamp(20px,2.2vw,28px);margin:0 0 12px}
+    .item{padding:18px;border:1px solid rgba(14,23,38,.06);border-radius:16px;background:#fff}
+    .kpi{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .kpi span{font-family:"JetBrains Mono", monospace;font-size:12px;border-radius:999px;background:rgba(0,209,255,.08);padding:6px 8px;border:1px solid rgba(0,209,255,.35)}
+    .meta{color:var(--muted);font-size:14px}
+    .list{display:flex;flex-direction:column;gap:10px}
+    .footer{margin:40px 0 10px;color:var(--muted);font-size:14px;text-align:center}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(0,0,0,.04);font-size:13px}
+    .anchor{scroll-margin-top:90px}
+    @media (max-width: 880px){
+      .hero{grid-template-columns:1fr;}
+      .col-6{grid-column:span 12}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand"><span class="dot"></span> <span>Zihang Huang</span></div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#patents">Patents</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <h1>Perception & Sensor Fusion for Autonomous Driving</h1>
+        <div class="subtitle">Ph.D. Candidate @ South China University of Technology · Perception Fusion Discipline Manager @ Desay SV Automotive (Singapore)</div>
+        <div class="badges">
+          <span class="badge">Autonomous Driving</span>
+          <span class="badge">3D Perception</span>
+          <span class="badge">Depth Estimation</span>
+          <span class="badge">Sensor Fusion</span>
+          <span class="badge">L4 Robotics</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn" href="#publications">View publications</a>
+          <a class="btn" href="./HuangZihangCV_EN_20250625.pdf" download>Download CV</a>
+        </div>
+      </div>
+      <div class="pfp card">
+        <!-- Replace this placeholder with your photo: /images/profile.jpg -->
+        <div>
+          <div style="font-weight:700">Add Profile Photo</div>
+          <div class="meta">/images/profile.jpg</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section anchor">
+      <div class="grid">
+        <div class="col-12">
+          <div class="item">
+            <h2>About</h2>
+            <p>I build production-grade perception and fusion systems for intelligent vehicles and robots. Recently, I led the architecture and delivery of two L2+ perception systems (Dongfeng eπ007/eπ008) and an L4 unmanned logistics robot platform. I also design scalable autolabeling systems for scenario reconstruction and moving-object detection to accelerate dataset creation.</p>
+            <div class="kpi">
+              <span>−99.4% annotation cost</span>
+              <span>192K frames/day throughput</span>
+              <span>98.5% MOD recall</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section anchor">
+      <h2>Experience</h2>
+      <div class="grid">
+        <div class="col-12 item">
+          <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+            <strong>Desay SV Automotive, Singapore</strong>
+            <span class="meta">Apr 2022 — Present · Principal Software Engineer / Discipline Manager</span>
+          </div>
+          <ul>
+            <li>Initiated & led L4 unmanned logistics robot platform; first prototype launched Mar 2025.</li>
+            <li>Managed ~40 engineers across CN/SG; delivered two L2+ perception systems (eπ007/eπ008) launched Jun 2024.</li>
+            <li>Designed lidar-based <em>4D Scenario Reconstruction</em> autolabeling system for lanes/markers.</li>
+            <li>Built scalable MOD autolabeling pipeline (98.5% recall; 6 cm position / 4 cm scale error; 192K frames/day).</li>
+          </ul>
+          <div class="kpi">
+            <span>−87.5% per-frame cost</span>
+            <span>6 cm pos. error</span>
+            <span>4 cm scale error</span>
+          </div>
+        </div>
+
+        <div class="col-12 item">
+          <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+            <strong>Desay SV Automotive, Singapore</strong>
+            <span class="meta">Apr 2020 — Mar 2022 · Senior Software Engineer / Group Lead</span>
+          </div>
+          <ul>
+            <li>Led 7 perception engineers across detection, lanes, lidar, and fusion.</li>
+            <li>Delivered a full-stack autonomous driving prototype; team won Silver Medal (6/143) at 2021 WIDC.</li>
+            <li>Deployed lightweight 3D detection on IPU03 (real-time, 100 m range, &lt;5% abs. position error).</li>
+          </ul>
+        </div>
+
+        <div class="col-12 item">
+          <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+            <strong>Desay SV Automotive, Singapore</strong>
+            <span class="meta">Aug 2018 — Mar 2020 · Software Engineer (Computer Vision)</span>
+          </div>
+          <ul>
+            <li>One-stage VRU detection on IPU03: 95% mAP, 120 m @ 83.3 FPS.</li>
+            <li>Monocular depth on IPU03: 25 FPS; &lt;3.4% err @50 m; &lt;5.6% @100 m.</li>
+            <li>Contributed to securing Singapore LTA autonomous driving road test license.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section anchor">
+      <h2>Selected Publications</h2>
+      <div class="list">
+        <div class="item">
+          <div><strong>QuadBEV</strong>: An Efficient Quadruple-Task Perception Framework via BEV Representation. ITSC 2024.</div>
+          <div class="meta"><a class="link" href="https://doi.org/10.48550/arXiv.2410.06516">DOI / arXiv</a></div>
+        </div>
+        <div class="item">
+          <div><strong>Towards Efficient 3D Object Detection in Bird's-Eye-Space</strong>. ITSC 2023.</div>
+          <div class="meta"><a class="link" href="https://doi.org/10.48550/arXiv.2312.00633">DOI / arXiv</a></div>
+        </div>
+        <div class="item">
+          <div><strong>Learning Content-Aware Multi-Modal Joint Input Pruning via BEV</strong>. arXiv 2024.</div>
+          <div class="meta"><a class="link" href="https://doi.org/10.48550/arXiv.2410.07268">arXiv</a></div>
+        </div>
+        <div class="item">
+          <div>EXGbuds: Universal Wearable Assistive Device for Disabled People. HRI'18 Companion.</div>
+          <div class="meta"><a class="link" href="https://doi.org/10.1145/3173386.3177836">DOI</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="patents" class="section anchor">
+      <h2>Patents</h2>
+      <div class="list">
+        <div class="item">Category Determination Method, Apparatus, Device and Storage Medium. CN115774844A. Published Mar 10, 2023.</div>
+        <div class="item">3D Object Detection Method Based on Monocular Camera. PCT/CN2021/102534; CN112883790A. Published Jun 1, 2021.</div>
+        <div class="item">Traffic Signal Light Detection Method... CN117456509A. Published Jan 26, 2024.</div>
+        <div class="item">Lane Line Tracking Method... CN117475394A. Published Jan 30, 2024.</div>
+        <div class="item">Perception Fusion System, Electronic Device and Storage Medium. CN116664997A. Published Aug 29, 2023.</div>
+        <div class="item">Object Detection Method... CN115761698A. Published Mar 7, 2023.</div>
+        <div class="item">Vehicle Driving Control Method, System and Storage Medium. CN116215526A. Published Jun 6, 2023.</div>
+        <div class="item">Automatic Calibration Method, System and Computer-Readable Storage Medium. CN118376986A. Published Jul 23, 2024.</div>
+      </div>
+    </section>
+
+    <section id="education" class="section anchor">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="col-12 item">
+          <strong>South China University of Technology</strong> — Eng.D. (Computer Science), ongoing. Advisor: Prof. C.L. Philip Chen.
+        </div>
+        <div class="col-12 item">
+          <strong>University of Pittsburgh</strong> — M.S. Electrical & Computer Engineering (GPA 3.9/4.0).
+        </div>
+        <div class="col-12 item">
+          <strong>Guangzhou University</strong> — B.S. Electrical Engineering (GPA 3.4/5.0).
+        </div>
+      </div>
+    </section>
+
+    <section class="section anchor" id="skills">
+      <h2>Skills</h2>
+      <div class="item">
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">C++</span>
+          <span class="badge">PyTorch</span>
+          <span class="badge">TensorFlow</span>
+          <span class="badge">TensorRT</span>
+          <span class="badge">CUDA</span>
+          <span class="badge">ROS</span>
+        </div>
+        <div class="pill">Fluent in English & Mandarin</div>
+      </div>
+    </section>
+
+    <section class="section anchor" id="press">
+      <h2>Press & Highlights</h2>
+      <div class="list">
+        <div class="item">Desay SV prototype won Silver Medal at 2021 WIDC — <a class="link" href="https://en.desaysv.com/index.php?id=5152">Press link</a></div>
+        <div class="item">Singapore LTA autonomous driving road test license — <a class="link" href="https://sg.news.yahoo.com/good-start-2020-desay-sv-020000611.html">News</a></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section anchor">
+      <h2>Contact</h2>
+      <div class="grid">
+        <div class="col-6 item">
+          <div><strong>Email</strong></div>
+          <div><a class="link" href="mailto:derekwong166@gmail.com">derekwong166@gmail.com</a></div>
+        </div>
+        <div class="col-6 item">
+          <div><strong>Phone</strong></div>
+          <div><a class="link" href="tel:+6584265804">(+65) 8426 5804</a></div>
+        </div>
+        <div class="col-12 item">
+          <div><strong>Research Interests</strong></div>
+          <div>Autonomous Driving · Computer Vision · Deep Learning · Object Detection · Depth Estimation · Sensor Fusion</div>
+        </div>
+      </div>
+    </section>
+
+    <p class="footer">© <span id="y"></span> Zihang Huang · Built for GitHub Pages · Bright cyber-tech theme</p>
+  </main>
+
+  <script>
+    // year stamp
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // smooth anchor scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id=a.getAttribute('href');
+        if(id.length>1){e.preventDefault();document.querySelector(id).scrollIntoView({behavior:'smooth'})}
+      })
+    })
+  </script>
+</body>
+</html>
